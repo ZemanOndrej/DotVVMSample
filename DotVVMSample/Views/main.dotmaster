@@ -1,0 +1,53 @@
+﻿@viewModel DotVVMSample.ViewModels.MainViewModel, DotVVMSample
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <nav class="header">
+        <div class="navbar-header">
+            <button type="button" class="hamburger-menu navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <h1><span class="glyphicon glyphicon-cutlery"></span> CheckBook</h1>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar" RenderSettings.Mode="Server">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <dot:RouteLink RouteName="home" >
+                        <span class="glyphicon glyphicon-th"></span> Home
+                    </dot:RouteLink>
+                </li>
+             
+                <li>
+                    <dot:RouteLink RouteName="chat" >
+                        <span class="glyphicon glyphicon-user"></span> Chat
+                    </dot:RouteLink>
+                </li>
+            </ul>
+
+           
+        </div>
+    </nav>
+    <dot:ContentPlaceHolder ID="MainContent" />
+
+</body>
+</html>
+
+

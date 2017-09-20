@@ -1,0 +1,31 @@
+﻿@viewModel DotVVMSample.ViewModels.ChatViewModel, DotVVMSample
+@masterPage Views/main.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <dot:RequiredResource Name="jquery" />
+    <dot:RequiredResource Name="signalr-client" />
+    <dot:RequiredResource Name="signalr-hubs" />
+    <dot:RequiredResource Name="customScript" />
+
+    <dot:Repeater DataSource="{value: TextList}">
+        <ItemTemplate>
+            {{value: _this}}<br />
+        </ItemTemplate>
+    </dot:Repeater>
+
+
+
+    <div class="container">
+        <input type="text" ID="message" />
+        <input type="button" ID="sendmessage" value="Send"/>
+        <input type="hidden" ID="displayname" />
+        <ul ID="discussion"></ul>
+    </div>
+
+
+
+
+
+</dot:Content>
+
+

@@ -1,0 +1,15 @@
+﻿@viewModel DotVVMSample.ViewModels.HomeViewModel, DotVVMSample
+@masterPage Views/main.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <h1>{{value: Text}}</h1>
+
+
+    <cc:MyDatePicker Text="{value: Date}" />
+
+    <dot:Button Click="{command: SendDate()}">Send</dot:Button>
+
+
+</dot:Content>
+
